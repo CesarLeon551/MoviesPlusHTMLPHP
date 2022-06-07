@@ -1,7 +1,7 @@
 <?php
 $usuario  = "root";
 $password = "12345678";
-$servidor = "mysql";
+$servidor = "mysql:5306";
 $basededatos = "pruebas";
 $con = mysqli_connect($servidor, $usuario, $password) or die("No se ha podido conectar al Servidor");
 mysqli_query($con,"SET SESSION collation_connection ='utf8_unicode_ci'");
